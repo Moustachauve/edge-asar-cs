@@ -1,3 +1,8 @@
+edge-asar-cs
+============
+Special version of edge-cs that is able to load dlls from asar packages
+
+
 edge-cs
 =======
 
