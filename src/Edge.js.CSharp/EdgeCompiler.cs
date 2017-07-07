@@ -35,6 +35,8 @@ public class EdgeCompiler
 
     public Func<object, Task<object>> CompileFunc(IDictionary<string, object> parameters, IDictionary<string, string> compileAssemblies)
     {
+        DebugMessage("EdgeCompiler::CompileFunc (CLR) - Starting");
+
         string source = (string) parameters["source"];
         string lineDirective = string.Empty;
         string fileName = null;
@@ -105,7 +107,7 @@ public class EdgeCompiler
 
             if (!string.IsNullOrEmpty(fileName))
             {
-                lineDirective = string.Format("#line {0} \"{1}\"", lineNumber, fileName);
+                lineDirective = string.Format("#line {0} \"{1}\"\n", lineNumber, fileName.Replace("\\", "\\\\"));
             }
         }
 

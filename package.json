@@ -5,7 +5,7 @@
     "url": "http://tomasz.janczuk.org",
     "twitter": "tjanczuk"
   },
-  "version": "1.0.2",
+  "version": "1.2.1",
   "description": "Edge-cs: run C# and node.js code in-process with edge.js",
   "tags" : ["owin", "edge", "net", "clr", "coreclr", "c#", "managed", ".net"],
   "main": "./lib/edge-cs.js",
@@ -16,10 +16,10 @@
   "homepage": "http://tjanczuk.github.com/edge",
   "repository": {
     "type": "git",
-    "url": "git@github.com:pwik/edge-asar-cs.git"
+    "url": "git@github.com:Moustachauve/edge-asar-cs.git"
   },
   "bugs" : {
-    "url" : "http://github.com/tjanczuk/edge-cs/issues"
+    "url" : "http://github.com/Moustachauve/edge-asar-cs/issues"
   },
   "scripts": {
     "install": "node tools/install.js"
